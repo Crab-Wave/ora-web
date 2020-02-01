@@ -13,16 +13,16 @@ class Home extends React.Component {
           <h1>Introduction</h1>
         </section>
 
-        <section className="Presentation">
+        <section className="Presentation" id="presentation">
           <h1>Présentation</h1>
         </section>
 
-        <section className="Team">
+        <section className="Team" id="equipe">
           <h1>Groupe</h1>
         </section>
 
-        <section className="Download">
-          <h1>Téléchargement</h1>
+        <section className="Downloads" id="telechargements">
+          <h1>Téléchargements</h1>
         </section>
       </div>
     );

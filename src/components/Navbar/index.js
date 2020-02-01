@@ -5,8 +5,9 @@ class Navbar extends React.Component {
   render() {
     return (
       <div className="Navbar">
-        <a href="/#presentation">Presentation</a>
-        <a href="/#team">Equipe</a>
+        <a href="/#presentation">Présentation</a>
+        <a href="/#equipe">Equipe</a>
+        <a href="/#telechargements">Téléchargements</a>
         <a href="/documentation">Documentation</a>
       </div>
     );
