@@ -24,6 +24,10 @@ class Home extends React.Component {
         <section className="Downloads" id="telechargements">
           <h1>Téléchargements</h1>
         </section>
+
+        <section className="Contacts" id="contacts">
+          <h1>Contacts</h1>
+        </section>
       </div>
     );
   }

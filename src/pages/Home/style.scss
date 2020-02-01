@@ -1,9 +1,34 @@
 .Home {
+  margin: 0 auto;
   text-align: center;
 
+  background-color: #ce6767;
+  color: white;
+
   .Introduction {
+    margin: 0 auto;
+    padding: 2vmin;
     height: 90vmin;
-    background-color: rgb(169, 123, 123);
+
+    h1 {
+      margin: 0 auto;
+    }
+  }
+
+  .Presentation {
+    height: 90vmin;
+  }
+
+  .Team {
+    height: 80vmin;
+  }
+
+  .Downloads {
+    height: 50vmin;
+  }
+
+  .Contacts {
+    height: 30vmin;
   }
 }
 
