@@ -5,7 +5,7 @@
   background-color: #ce6767;
   color: white;
 
-  .Introduction {
+  .Accueil {
     margin: 0 auto;
     padding: 2vmin;
     height: 90vmin;
@@ -19,8 +19,13 @@
     height: 90vmin;
   }
 
-  .Team {
+  .Group {
     height: 80vmin;
+
+    .Group-member {
+      display: flex;
+      flex-direction: row;
+    }
   }
 
   .Downloads {

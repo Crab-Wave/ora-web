@@ -9,16 +9,32 @@ class Home extends React.Component {
       <div className="Home">
         <Navbar />
 
-        <section className="Introduction">
-          <h1>Introduction</h1>
+        <section className="Accueil">
+          <h1>ORA</h1>
+          <p>ORA est un logiciel de stockage de fichier en P2P</p>
         </section>
 
         <section className="Presentation" id="presentation">
           <h1>Présentation</h1>
         </section>
 
-        <section className="Team" id="equipe">
+        <section className="Group" id="groupe">
           <h1>Groupe</h1>
+          <p>ORA est actuellement développé par Crab Wave: un groupe d'étudians à EPITA</p>
+          <div className="Group-members">
+            <div>
+              <h1>Léo Benito</h1>
+            </div>
+            <div>
+              <h1>Raffaël Moraisin</h1>
+            </div>
+            <div>
+              <h1>Adam Thiber</h1>
+            </div>
+            <div>
+              <h1>Pierre-Corentin Auger</h1>
+            </div>
+          </div>
         </section>
 
         <section className="Downloads" id="telechargements">
