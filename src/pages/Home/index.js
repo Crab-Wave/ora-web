@@ -22,16 +22,27 @@ class Home extends React.Component {
           <h1>Groupe</h1>
           <p>ORA est actuellement développé par Crab Wave: un groupe d'étudiants à EPITA</p>
           <div className="Group-members">
-            <div>
+            <div className="Group-member">
+              <img src="https://avatars2.githubusercontent.com/u/31016188"
+                   alt="leo-img"></img>
               <h1>Léo Benito</h1>
             </div>
-            <div>
+
+            <div className="Group-member">
+              <img src="https://avatars3.githubusercontent.com/u/59165594"
+                   alt="raffael-img"></img>
               <h1>Raffaël Moraisin</h1>
             </div>
-            <div>
-              <h1>Adam Thiber</h1>
+
+            <div className="Group-member">
+              <img src="https://avatars3.githubusercontent.com/u/9221023"
+                   alt="adam-img"></img>
+              <h1>Adam Thibert</h1>
             </div>
-            <div>
+
+            <div className="Group-member">
+              <img src="https://avatars1.githubusercontent.com/u/59179789"
+                   alt="pierre-corentin-img"></img>
               <h1>Pierre-Corentin Auger</h1>
             </div>
           </div>

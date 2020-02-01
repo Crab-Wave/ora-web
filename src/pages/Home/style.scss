@@ -20,11 +20,15 @@
   }
 
   .Group {
-    height: 80vmin;
+    // height: 80vmin;
 
-    .Group-member {
+    .Group-members {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+
+      img {
+        height: 5vmin;
+      }
     }
   }
 
