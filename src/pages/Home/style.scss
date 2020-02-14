@@ -20,11 +20,6 @@
   }
 
   .Group {
-
-    a {
-      text-decoration: none;
-    }
-
     .Group-members {
       display: flex;
       flex-direction: column;
@@ -35,23 +30,6 @@
       padding-left: 10vw;
       padding-top: 2vmin;
       padding-bottom: 2vmin;
-
-      .Group-member {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        margin-top: 2vmin;
-        margin-bottom: 2vmin;
-
-        img {
-          height: 12vmin;
-          margin-right: 3vmin;
-        }
-
-        h1 {
-          margin: 0;
-        }
-      }
     }
   }
 

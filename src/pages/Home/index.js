@@ -2,6 +2,7 @@ import React from 'react';
 import './style.scss';
 
 import Navbar from '../../components/Navbar';
+import GroupMember from '../../components/GroupMember';
 
 class Home extends React.Component {
   render() {
@@ -22,55 +23,36 @@ class Home extends React.Component {
           <h1>Groupe</h1>
           <p>ORA est actuellement développé par Crab Wave: un groupe d'étudiants en première année à EPITA</p>
           <div className="Group-members">
-            <div className="Group-member">
-              <img src="https://avatars2.githubusercontent.com/u/31016188"
-                   alt="leo-img"></img>
-              <div>
-                <h1>Léo Benito</h1>
-                <h1><a href="https://github.com/TrAyZeN">github</a></h1>
-                <h1><a>mail</a></h1>
-                <h1><a>linkedin</a></h1>
-              </div>
-            </div>
+            <GroupMember name="Léo Benito"
+                         picture="https://avatars2.githubusercontent.com/u/31016188"
+                         github="https://github.com/TrAyZeN"
+                         mail=""
+                         linkedin="" />
 
-            <div className="Group-member">
-              <img src="https://avatars3.githubusercontent.com/u/59165594"
-                   alt="raffael-img"></img>
-              <div>
-                <h1>Raffaël Moraisin</h1>
-                <h1><a href="https://github.com/raffaelmoraisin">github</a></h1>
-                <h1><a>mail</a></h1>
-                <h1><a>linkedin</a></h1>
-              </div>
-            </div>
+            <GroupMember name="Raffaël Moraisin"
+                         picture="https://avatars3.githubusercontent.com/u/59165594"
+                         github="https://github.com/raffaelmoraisin"
+                         mail=""
+                         linkedin="" />
 
-            <div className="Group-member">
-              <img src="https://avatars3.githubusercontent.com/u/9221023"
-                   alt="adam-img"></img>
-              <div>
-                <h1>Adam Thibert</h1>
-                <h1><a href="https://github.com/Adamaq01">github</a></h1>
-                <h1><a>mail</a></h1>
-                <h1><a>linkedin</a></h1>
-              </div>
-            </div>
 
-            <div className="Group-member">
-              <img src="https://avatars1.githubusercontent.com/u/59179789"
-                   alt="pierre-corentin-img"></img>
-              <div>
-                <h1>Pierre-Corentin Auger</h1>
-                <h1><a href="https://github.com/PierreCorentin">github</a></h1>
-                <h1><a>mail</a></h1>
-                <h1><a>linkedin</a></h1>
-              </div>
-            </div>
+            <GroupMember name="Adam Thibert"
+                         picture="https://avatars3.githubusercontent.com/u/9221023"
+                         github="https://github.com/Adamaq01"
+                         mail=""
+                         linkedin="" />
+
+            <GroupMember name="Pierre-Corentin Auger"
+                         picture="https://avatars1.githubusercontent.com/u/59179789"
+                         github="https://github.com/PierreCorentin"
+                         mail=""
+                         linkedin="" />
           </div>
         </section>
 
         <section className="Downloads" id="telechargements">
           <h1>Téléchargements</h1>
-          <h2><a href="https://github.com/Crab-Wave/ora-specs/releases/download/v1.0/specifications.pdf" target="_blank">Cahier des charges</a></h2>
+          <h2><a href="https://github.com/Crab-Wave/ora-specs/releases/download/v1.0/specifications.pdf">Cahier des charges</a></h2>
           <h2><a href="https://github.com/Crab-Wave/ora">ORA</a></h2>
           <h2><a href="https://github.com/Crab-Wave/ora-tracker">Tracker ORA</a></h2>
         </section>
