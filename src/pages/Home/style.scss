@@ -5,14 +5,20 @@
   background-color: #ce6767;
   color: white;
 
+  h1 {
+    font-size: 6vmin;
+    margin: 3vmin auto;
+  }
+
+  p {
+    font-size: 2vmin;
+    margin: 0 auto;
+  }
+
   .Accueil {
     margin: 0 auto;
     padding: 2vmin;
     height: 90vmin;
-
-    h1 {
-      margin: 0 auto;
-    }
   }
 
   .Presentation {
@@ -26,7 +32,7 @@
       justify-content: center;
       text-align: left;
 
-      margin: 0;
+      margin: 2vmin;
       padding-left: 10vw;
       padding-top: 2vmin;
       padding-bottom: 2vmin;

@@ -16,23 +16,25 @@ class GroupMember extends React.Component {
         <img src={this.props.picture}
              alt="member-picture" />
 
-        <h1>{this.props.name}</h1>
+        <div className="GroupMember-information">
+          <h2>{this.props.name}</h2>
 
-        <div className="GroupMember-links">
-          <a href={this.props.github}>
-            <img src={github}
-                 alt="github-icon" />
-          </a>
+          <div className="GroupMember-links">
+            <a href={this.props.github}>
+              <img src={github}
+                    alt="github-icon" />
+            </a>
 
-          <a href={this.props.mail}>
-            <img src={gmail}
-                 alt="gmail-icon" />
-          </a>
+            <a href={this.props.mail}>
+              <img src={gmail}
+                    alt="gmail-icon" />
+            </a>
 
-          <a href={this.props.linkedin}>
-            <img src={linkedin}
-                 alt="linkedin-icon" />
-          </a>
+            <a href={this.props.linkedin}>
+              <img src={linkedin}
+                    alt="linkedin-icon" />
+            </a>
+          </div>
         </div>
       </div>
     );

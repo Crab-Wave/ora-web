@@ -1,20 +1,35 @@
 .GroupMember {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 2vmin;
+  margin-bottom: 2vmin;
+
+  img {
+    height: 12vmin;
+    margin-right: 3vmin;
+  }
+
+  .GroupMember-information {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
-    margin-top: 2vmin;
-    margin-bottom: 2vmin;
+    margin-top: 1vmin;
 
-    img {
-        height: 12vmin;
-        margin-right: 3vmin;
-    }
-
-    h1 {
-        margin: 0;
+    h2 {
+      margin: 0;
+      margin-bottom: 2vmin;
     }
 
     a {
-        text-decoration: none;
+      text-decoration: none;
     }
+
+    .GroupMember-links {
+      img {
+        height: 4vmin;
+        border-radius: 7%;
+      }
+    }
+  }
 }
