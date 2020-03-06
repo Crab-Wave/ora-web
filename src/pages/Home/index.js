@@ -6,6 +6,9 @@ import GroupMember from '../../components/GroupMember';
 
 import specifications from '../../assets/specifications.pdf';
 
+import github from '../../assets/github.svg';
+import gmail from '../../assets/gmail.svg';
+
 class Home extends React.Component {
   render() {
     return (
@@ -92,7 +95,18 @@ class Home extends React.Component {
         </section>
 
         <section className="Contacts" id="contacts">
-          <h1>Contacts</h1>
+          <h1>Nous contacter</h1>
+          <div className="Contacts-links">
+            <a href="https://github.com/Crab-Wave"
+               target="_blank"
+               rel="noopener noreferrer">
+              <img src={github} />
+            </a>
+
+            <a href="mailto:crabwave.contact@gmail.com">
+              <img src={gmail} />
+            </a>
+          </div>
         </section>
       </div>
     );

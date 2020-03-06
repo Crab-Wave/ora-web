@@ -83,6 +83,12 @@
 
   .Contacts {
     height: 30vmin;
+
+    .Contacts-links {
+      img {
+        height: 8vmin;
+        margin-left: 4vmin;
+      }
+    }
   }
 }
-

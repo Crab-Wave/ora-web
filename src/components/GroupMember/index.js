@@ -22,17 +22,17 @@ class GroupMember extends React.Component {
           <div className="GroupMember-links">
             <a href={this.props.github}>
               <img src={github}
-                    alt="github-icon" />
+                   alt="github-icon" />
             </a>
 
             <a href={this.props.mail}>
               <img src={gmail}
-                    alt="gmail-icon" />
+                   alt="gmail-icon" />
             </a>
 
             <a href={this.props.linkedin}>
               <img src={linkedin}
-                    alt="linkedin-icon" />
+                   alt="linkedin-icon" />
             </a>
           </div>
         </div>

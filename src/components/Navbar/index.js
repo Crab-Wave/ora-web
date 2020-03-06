@@ -8,7 +8,7 @@ class Navbar extends React.Component {
         <a href="/#presentation">Présentation</a>
         <a href="/#groupe">Groupe</a>
         <a href="/#telechargements">Téléchargements</a>
-        <a href="/#contacts">Contacts</a>
+        <a href="/#contacts">Nous contacter</a>
         <a href="/documentation">Documentation</a>
       </div>
     );
