@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: flex-start;
   margin-top: 2vmin;
-  margin-bottom: 2vmin;
+  margin-bottom: 4vmin;
 
   img {
     height: 12vmin;
@@ -27,8 +27,18 @@
 
     .GroupMember-links {
       img {
+        padding: 0.4vmin;
         height: 4vmin;
         border-radius: 7%;
+
+        transition: 0.15s;
+      }
+
+      img:hover {
+        background-color: #66b7b7;
+        filter: invert(100%);
+
+        transition: 0.2s;
       }
     }
   }

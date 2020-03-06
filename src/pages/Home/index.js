@@ -28,30 +28,33 @@ class Home extends React.Component {
           <p>ORA est actuellement développé par Crab Wave: un groupe d'étudiants en première année à EPITA</p>
 
           <div className="Group-members">
-            <GroupMember name="Léo Benito"
-                         picture="https://avatars2.githubusercontent.com/u/31016188"
-                         github="https://github.com/TrAyZeN"
-                         mail=""
-                         linkedin="" />
+            <div className="Group-members-column">
+              <GroupMember name="Léo Benito"
+                           picture="https://avatars2.githubusercontent.com/u/31016188"
+                           github="https://github.com/TrAyZeN"
+                           mail=""
+                           linkedin="" />
 
-            <GroupMember name="Raffaël Moraisin"
-                         picture="https://avatars3.githubusercontent.com/u/59165594"
-                         github="https://github.com/raffaelmoraisin"
-                         mail=""
-                         linkedin="" />
+              <GroupMember name="Raffaël Moraisin"
+                           picture="https://avatars3.githubusercontent.com/u/59165594"
+                           github="https://github.com/raffaelmoraisin"
+                           mail=""
+                           linkedin="" />
+            </div>
 
+            <div className="Group-members-column">
+              <GroupMember name="Adam Thibert"
+                           picture="https://avatars3.githubusercontent.com/u/9221023"
+                           github="https://github.com/Adamaq01"
+                           mail=""
+                           linkedin="" />
 
-            <GroupMember name="Adam Thibert"
-                         picture="https://avatars3.githubusercontent.com/u/9221023"
-                         github="https://github.com/Adamaq01"
-                         mail=""
-                         linkedin="" />
-
-            <GroupMember name="Pierre-Corentin Auger"
-                         picture="https://avatars1.githubusercontent.com/u/59179789"
-                         github="https://github.com/PierreCorentin"
-                         mail=""
-                         linkedin="" />
+              <GroupMember name="Pierre-Corentin Auger"
+                           picture="https://avatars1.githubusercontent.com/u/59179789"
+                           github="https://github.com/PierreCorentin"
+                           mail=""
+                           linkedin="" />
+            </div>
           </div>
         </section>
 
@@ -59,11 +62,33 @@ class Home extends React.Component {
                  id="telechargements">
           <h1>Téléchargements</h1>
 
-          <h2><a href={specifications}
-                 target="_blank"
-                 rel="noopener noreferrer">Cahier des charges</a></h2>
-          <h2><a href="https://github.com/Crab-Wave/ora">ORA</a></h2>
-          <h2><a href="https://github.com/Crab-Wave/ora-tracker">Tracker ORA</a></h2>
+          <div className="Downloads-ora">
+            <h2>ORA</h2>
+            <p>L'application ORA</p>
+            <a href="https://github.com/Crab-Wave/ora">
+              <button>
+                Télécharger
+              </button>
+            </a>
+          </div>
+
+          <div className="Downloads-ora-tracker">
+            <h2>ORA tracker</h2>
+            <p>Le tracker ORA</p>
+            <a href="https://github.com/Crab-Wave/ora-tracker">
+              <button>
+                Télécharger
+              </button>
+            </a>
+          </div>
+
+          <div className="Downloads-reports">
+            <h2>Rapports</h2>
+            <p>Tous les documents ecrits</p>
+            <h2><a href={specifications}
+                  target="_blank"
+                  rel="noopener noreferrer">Cahier des charges</a></h2>
+          </div>
         </section>
 
         <section className="Contacts" id="contacts">

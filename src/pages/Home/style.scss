@@ -28,7 +28,7 @@
   .Group {
     .Group-members {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: center;
       text-align: left;
 
@@ -36,11 +36,49 @@
       padding-left: 10vw;
       padding-top: 2vmin;
       padding-bottom: 2vmin;
+
+      .Group-members-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+
+        margin-right: 10vmin;
+      }
     }
   }
 
   .Downloads {
     padding-bottom: 2vmin;
+
+    a {
+      text-decoration: none;
+    }
+
+    p {
+      margin-bottom: 3vmin;
+    }
+
+    button {
+      border: 0;
+      border-radius: 5px;
+
+      color: white;
+      background-color: #632323;
+
+      padding: 1vmin;
+      font-size: 3vmin;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background-color: #bd2f2f;
+      transition: 0.2s;
+    }
+
+    button:focus {
+      outline: 0;
+    }
   }
 
   .Contacts {
