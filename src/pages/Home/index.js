@@ -207,7 +207,7 @@ class Home extends React.Component {
               <img src={github} />
             </a>
 
-            <a href="mailto:crabwave.contact@gmail.com">
+            <a href="mailto:contact@crabwave.com">
               <img src={gmail} />
             </a>
           </div>
