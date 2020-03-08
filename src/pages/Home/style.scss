@@ -2,12 +2,13 @@
   margin: 0 auto;
   text-align: center;
 
-  background-color: #ce6767;
+  background-color: #171513;
   color: white;
 
   h1 {
     font-size: 6vmin;
-    margin: 3vmin auto;
+    margin: 0;
+    margin-bottom: 4vmin;
   }
 
   p {
@@ -16,16 +17,23 @@
   }
 
   .Accueil {
+    background-color: #171513;
+    padding: 3vmin;
     margin: 0 auto;
     padding: 2vmin;
     height: 90vmin;
   }
 
   .Presentation {
+    background-color: #524d48;
+    padding: 3vmin;
     height: 90vmin;
   }
 
   .Group {
+    background-color: #171513;
+    padding: 3vmin;
+
     .Group-members {
       display: flex;
       flex-direction: row;
@@ -49,7 +57,8 @@
   }
 
   .Downloads {
-    padding-bottom: 2vmin;
+    background-color: #6e645b;
+    padding: 3vmin;
 
     a {
       text-decoration: none;
@@ -64,7 +73,7 @@
       border-radius: 5px;
 
       color: white;
-      background-color: #632323;
+      background-color: #171513;
 
       padding: 1vmin;
       font-size: 3vmin;
@@ -72,7 +81,7 @@
     }
 
     button:hover {
-      background-color: #bd2f2f;
+      background-color: #4f4d4c;
       transition: 0.2s;
       cursor: pointer;
     }
@@ -83,12 +92,27 @@
   }
 
   .Contacts {
-    height: 30vmin;
+    padding: 3vmin;
 
     .Contacts-links {
       img {
-        height: 8vmin;
-        margin-left: 4vmin;
+        height: 6vmin;
+        margin-left: 2vmin;
+        margin-right: 2vmin;
+        margin-bottom: 2vmin;
+        padding: 0.4vmin;
+        border-radius: 7%;
+
+        filter: invert(100%);
+        -webkit-filter: invert(100%);
+        transition: 0.2s;
+      }
+
+      img:hover {
+        filter: invert(0%);
+        -webkit-filter: invert(0%);
+        background-color: white;
+        transition: 0.2s;
       }
     }
   }

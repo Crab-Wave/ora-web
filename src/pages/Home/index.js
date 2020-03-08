@@ -28,7 +28,7 @@ class Home extends React.Component {
         <section className="Group"
                  id="groupe">
           <h1>Groupe</h1>
-          <p>ORA est actuellement développé par Crab Wave: un groupe d'étudiants en première année à EPITA</p>
+          <p>ORA est actuellement développé par Crab Wave: un groupe d'étudiants en première année à l'EPITA.</p>
 
           <div className="Group-members">
             <div className="Group-members-column">
