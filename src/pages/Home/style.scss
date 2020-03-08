@@ -22,12 +22,27 @@
     margin: 0 auto;
     padding: 2vmin;
     height: 90vmin;
+
+    h1 {
+      font-size: 12vmin;
+      margin-top: 12vmin;
+      margin-bottom: 12vmin;
+    }
+
+    p {
+      font-size: 4vmin;
+      width: 50%;
+    }
   }
 
   .Presentation {
     background-color: #524d48;
     padding: 3vmin;
     height: 90vmin;
+
+    p {
+      width: 40%;
+    }
   }
 
   .Group {

@@ -17,12 +17,27 @@ class Home extends React.Component {
 
         <section className="Accueil">
           <h1>ORA</h1>
-          <p>ORA est un logiciel de stockage de fichier en P2P</p>
+          <p>ORA est une application qui vous permet de partager directement vos fichiers avec vos amis grâce à la technologie Peer-to-Peer.</p>
         </section>
 
         <section className="Presentation"
                  id="presentation">
           <h1>Présentation</h1>
+          <p>
+            ORA est une application développée en C# par 4 étudiants en école d'ingénieur dans le cadre d'un projet de groupe.
+            Notre but est de proposer un moyen rapide et sécurisé de partager des fichiers en utilisant la technologie Peer-to-Peer.
+          </p>
+          <br />
+          <p>
+            "Mais qu'est-ce que le Peer-to-Peer ?"
+          </p>
+          <br />
+          <p>
+            Eh bien la plupart des services et logiciels de stockage et partage de fichier, tel que Dropbox ou iCloud,
+            marchent selon une architecture client-serveur. Vous (un client) envoyez une requête (par exemple, télécharger un fichier)
+            à un serveur qui va traiter cette requête. Dans le modèle Peer-to Peer, chaque client fait lui même office de serveur, et
+            peuvent ainsi partager des fichiers directement entre eux sans avoir besoin d'un intermédiaire.
+          </p>
         </section>
 
         <section className="Group"
