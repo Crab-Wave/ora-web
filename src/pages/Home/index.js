@@ -35,13 +35,13 @@ class Home extends React.Component {
               <GroupMember name="Léo Benito"
                            picture="https://avatars2.githubusercontent.com/u/31016188"
                            github="https://github.com/TrAyZeN"
-                           mail=""
+                           mail="lbenitoproduction@gmail.com"
                            linkedin="" />
 
               <GroupMember name="Raffaël Moraisin"
                            picture="https://avatars3.githubusercontent.com/u/59165594"
                            github="https://github.com/raffaelmoraisin"
-                           mail=""
+                           mail="raffael.moraisin@epita.fr"
                            linkedin="" />
             </div>
 
@@ -49,13 +49,13 @@ class Home extends React.Component {
               <GroupMember name="Adam Thibert"
                            picture="https://avatars3.githubusercontent.com/u/9221023"
                            github="https://github.com/Adamaq01"
-                           mail=""
+                           mail="adamthibert01@gmail.com"
                            linkedin="" />
 
               <GroupMember name="Pierre-Corentin Auger"
                            picture="https://avatars1.githubusercontent.com/u/59179789"
                            github="https://github.com/PierreCorentin"
-                           mail=""
+                           mail="pierre-corentin.auger@epita.fr"
                            linkedin="" />
             </div>
           </div>
