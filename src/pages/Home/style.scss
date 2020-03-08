@@ -60,34 +60,40 @@
     background-color: #6e645b;
     padding: 3vmin;
 
-    a {
-      text-decoration: none;
-    }
+    .Downloads-item {
+      margin-bottom: 4vmin;
 
-    p {
-      margin-bottom: 3vmin;
-    }
+      h2 {
+        margin-bottom: 1vmin;
+      }
 
-    button {
-      border: 0;
-      border-radius: 5px;
+      a {
+        text-decoration: none;
+      }
 
-      color: white;
-      background-color: #171513;
+      button {
+        border: 0;
+        border-radius: 5px;
+        margin-left: 1vmin;
+        margin-right: 1vmin;
 
-      padding: 1vmin;
-      font-size: 3vmin;
-      transition: 0.2s;
-    }
+        color: white;
+        background-color: #171513;
 
-    button:hover {
-      background-color: #4f4d4c;
-      transition: 0.2s;
-      cursor: pointer;
-    }
+        padding: 1vmin;
+        font-size: 3vmin;
+        transition: 0.2s;
+      }
 
-    button:focus {
-      outline: 0;
+      button:hover {
+        background-color: #4f4d4c;
+        transition: 0.2s;
+        cursor: pointer;
+      }
+
+      button:focus {
+        outline: 0;
+      }
     }
   }
 

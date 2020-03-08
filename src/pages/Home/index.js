@@ -65,37 +65,141 @@ class Home extends React.Component {
                  id="telechargements">
           <h1>Téléchargements</h1>
 
-          <div className="Downloads-ora">
+          <div className="Downloads-item">
             <h2>ORA</h2>
-            <p>L'application ORA</p>
-            <a href="https://github.com/Crab-Wave/ora">
+
+            <a href="https://github.com/Crab-Wave/ora"
+               target="_blank"
+               rel="noopener noreferrer">
               <button>
                 Télécharger
               </button>
             </a>
+            <a href="https://github.com/Crab-Wave/ora"
+               target="_blank"
+               rel="noopener noreferrer">
+              <button>
+                Code source
+              </button>
+            </a>
           </div>
 
-          <div className="Downloads-ora-tracker">
+          <div className="Downloads-item">
             <h2>ORA tracker</h2>
-            <p>Le tracker ORA</p>
-            <a href="https://github.com/Crab-Wave/ora-tracker">
+
+            <a href="https://github.com/Crab-Wave/ora-tracker"
+               target="_blank"
+               rel="noopener noreferrer">
               <button>
                 Télécharger
               </button>
             </a>
+            <a href="https://github.com/Crab-Wave/ora-tracker"
+               target="_blank"
+               rel="noopener noreferrer">
+              <button>
+                Code source
+              </button>
+            </a>
           </div>
 
-          <div className="Downloads-reports">
-            <h2>Rapports</h2>
-            <p>Tous les documents ecrits</p>
-            <h2><a href={specifications}
-                  target="_blank"
-                  rel="noopener noreferrer">Cahier des charges</a></h2>
+          <div className="Downloads-item">
+            <h2>Cahier des charges</h2>
+            <a href={specifications}
+               target="_blank"
+               rel="noopener noreferrer">
+              <button>
+                Télécharger
+              </button>
+            </a>
+            <a href="https://github.com/Crab-Wave/ora-specs"
+               target="_blank"
+               rel="noopener noreferrer">
+              <button>
+                Code source
+              </button>
+            </a>
+          </div>
+
+          <div className="Downloads-item">
+            <h2>Soutenance 1</h2>
+            <a href={specifications}
+               target="_blank"
+               rel="noopener noreferrer">
+              <button>
+                Rapport
+              </button>
+            </a>
+            <a href={specifications}
+               target="_blank"
+               rel="noopener noreferrer">
+              <button>
+                Plan
+              </button>
+            </a>
+            <a href="https://github.com/Crab-Wave/ora-specs"
+               target="_blank"
+               rel="noopener noreferrer">
+              <button>
+                Code source
+              </button>
+            </a>
+          </div>
+
+          <div className="Downloads-item">
+            <h2>Soutenance 2</h2>
+            <a href={specifications}
+               target="_blank"
+               rel="noopener noreferrer">
+              <button>
+                Rapport
+              </button>
+            </a>
+            <a href={specifications}
+               target="_blank"
+               rel="noopener noreferrer">
+              <button>
+                Plan
+              </button>
+            </a>
+            <a href="https://github.com/Crab-Wave/ora-specs"
+               target="_blank"
+               rel="noopener noreferrer">
+              <button>
+                Code source
+              </button>
+            </a>
+          </div>
+
+          <div className="Downloads-item">
+            <h2>Soutenance 3</h2>
+            <a href={specifications}
+               target="_blank"
+               rel="noopener noreferrer">
+              <button>
+                Rapport
+              </button>
+            </a>
+            <a href={specifications}
+               target="_blank"
+               rel="noopener noreferrer">
+              <button>
+                Plan
+              </button>
+            </a>
+            <a href="https://github.com/Crab-Wave/ora-specs"
+               target="_blank"
+               rel="noopener noreferrer">
+              <button>
+                Code source
+              </button>
+            </a>
           </div>
         </section>
 
         <section className="Contacts" id="contacts">
           <h1>Nous contacter</h1>
+
           <div className="Contacts-links">
             <a href="https://github.com/Crab-Wave"
                target="_blank"
