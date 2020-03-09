@@ -25,7 +25,7 @@ class GroupMember extends React.Component {
                    alt="github-icon" />
             </a>
 
-            <a href={this.props.mail}>
+            <a href={"mailto:" + this.props.mail}>
               <img src={gmail}
                    alt="gmail-icon" />
             </a>
