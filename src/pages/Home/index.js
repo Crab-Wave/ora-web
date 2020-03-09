@@ -227,6 +227,10 @@ class Home extends React.Component {
             </a>
           </div>
         </section>
+
+        <footer>
+          <p>© 2020 Crab Wave - All rights reserved</p>
+        </footer>
       </div>
     );
   }
