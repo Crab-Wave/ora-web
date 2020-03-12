@@ -5,7 +5,7 @@
   "private": true,
   "author": {
     "name": "Crab Wave",
-    "email": "crabwave.contact@gmail.com",
+    "email": "contact@crabwave.com",
     "url": "https://crabwave.com/"
   },
   "contributors": [
@@ -29,7 +29,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "yarn doc && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "doc": "node ./scripts/generateDocumentation.js"
@@ -49,5 +49,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "."
+  "homepage": ".",
+  "devDependencies": {
+    "fast-xml-parser": "^3.16.0"
+  }
 }
