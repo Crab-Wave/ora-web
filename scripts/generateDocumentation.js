@@ -35,7 +35,7 @@ const get = url => {
 }
 
 async function main() {
-    let documentation = xmlToJsObject(await get("https://raw.githubusercontent.com/Crab-Wave/ora/master/documentation.json"));
+    let documentation = xmlToJsObject(await get("https://raw.githubusercontent.com/Crab-Wave/ora/master/documentation.xml"));
 
     if (documentation.doc.members.member === undefined)
         throw Error("Invalid documentation object");
