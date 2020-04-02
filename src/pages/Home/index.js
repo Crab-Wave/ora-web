@@ -218,11 +218,13 @@ function Home() {
           <a href="https://github.com/Crab-Wave"
               target="_blank"
               rel="noopener noreferrer">
-            <img src={github} />
+            <img src={github}
+                 alt="GitHub icon" />
           </a>
 
           <a href="mailto:contact@crabwave.com">
-            <img src={gmail} />
+            <img src={gmail}
+                 alt="Gmail icon" />
           </a>
         </div>
       </section>
