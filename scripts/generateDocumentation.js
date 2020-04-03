@@ -81,11 +81,7 @@ class Documentation {
     }
 
     serialize() {
-        let l = [];
-        for (let classObj in this.document)
-            l.push(this.document[classObj]);
-
-        return JSON.stringify(l, null, 2);
+        return JSON.stringify(this.document, null, 2);
     }
 
     isClassRegistered(classname) {
@@ -94,7 +90,6 @@ class Documentation {
 
     registerClass(classname) {
         this.document[classname] = {
-            "class": classname,
             "summary": "",
             example: {},
             "methods": []
