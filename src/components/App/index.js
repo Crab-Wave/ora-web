@@ -16,8 +16,7 @@ function App() {
           <Route exact
                  path="/"
                  component={Home} />
-          <Route exact
-                 path="/documentation"
+          <Route path="/documentation/:className?"
                  component={Documentation} />
         </Switch>
       </Router>
