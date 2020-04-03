@@ -24,4 +24,4 @@ yarn-error.log*
 
 # documentation file
 documentation.xml
-documentation.json
+# documentation.json

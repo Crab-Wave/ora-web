@@ -1,0 +1,34 @@
+{
+  "ORA.API.Encryption.ICipher": {
+    "summary": "An object capable of Encrypting data or Decrypting data that has been previously encrypted with the same algorithm.",
+    "example": {
+      "text": "\r\n                 The following code\r\n                 \r\n                 will print the value\r\n                 \r\n                 .\r\n             ",
+      "code": "\r\n                     ICipher cipher = ...;\r\n                     byte[] data = ...;\r\n                     byte[] encrypted = cipher.Encrypt(data);\r\n\r\n                     Console.WriteLine(cipher.Decrypt(encrypted).Equals(data));\r\n                 ",
+      "c": true
+    },
+    "methods": [
+      {
+        "prototype": "Encrypt(System.Byte[])",
+        "summary": "Encrypts the given data following a specific algorithm.",
+        "param": {
+          "text": "The data to encrypt",
+          "attributes": {
+            "name": "data"
+          }
+        },
+        "returns": "The encrypted data"
+      },
+      {
+        "prototype": "Decrypt(System.Byte[])",
+        "summary": "Decrypts the given data if it has previously been encrypted using the same algorithm.",
+        "param": {
+          "text": "The data to decrypt",
+          "attributes": {
+            "name": "data"
+          }
+        },
+        "returns": "The Decrypted data"
+      }
+    ]
+  }
+}
