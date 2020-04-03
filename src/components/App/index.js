@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 
 import Home from '../../pages/Home';
+import DocumentationHome from '../../pages/DocumentationHome';
 import Documentation from '../../pages/Documentation';
 
 function App() {
@@ -16,7 +17,10 @@ function App() {
           <Route exact
                  path="/"
                  component={Home} />
-          <Route path="/documentation/:className?"
+          <Route exact
+                 path="/documentation"
+                 component={DocumentationHome} />
+          <Route path="/documentation/:className"
                  component={Documentation} />
         </Switch>
       </Router>
