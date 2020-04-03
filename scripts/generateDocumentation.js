@@ -106,7 +106,7 @@ async function main() {
     let documentation = new Documentation();
     documentation.parse(json.doc.members.member);
 
-    fs.writeFileSync("./src/pages/Documentation/documentation.json", documentation.serialize(), "utf-8");
+    fs.writeFileSync("./src/documentation.json", documentation.serialize(), "utf-8");
 }
 
 main();
