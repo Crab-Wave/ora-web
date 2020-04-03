@@ -4,6 +4,7 @@ import './style.scss';
 function Navbar() {
   return (
     <div className="Navbar">
+      <a href="/">Accueil</a>
       <a href="/#presentation">Présentation</a>
       <a href="/#groupe">Groupe</a>
       <a href="/#telechargements">Téléchargements</a>
