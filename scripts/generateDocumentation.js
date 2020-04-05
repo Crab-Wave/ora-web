@@ -64,8 +64,14 @@ class Documentation {
 
         if ("summary" in member)
             this.document[classname].summary = member.summary.trim();
-        if ("example" in member)
-            this.document[classname].example = member.example;
+        if ("example" in member) {
+            for (let key in member.example) {
+                if (typeof(member.example[key]) === "string")
+                    this.document[classname].example[key] = this.removeAdditionalIndent(member.example[key]);
+                else
+                    this.document[classname].example[key] = member.example[key];
+            }
+        }
     }
 
     addMethodToClass(classname, prototype, member) {
@@ -94,6 +100,18 @@ class Documentation {
             example: {},
             "methods": []
         };
+    }
+
+    removeAdditionalIndent(str) {
+        let firstLine = str.split("\n")[1];
+        let additionalIndent = " ".repeat(firstLine.length - firstLine.trimStart().length);
+
+        return str.trim()
+            .split("\n")
+            .map(x => x.startsWith(additionalIndent)
+                    ? x.substring(additionalIndent.length)
+                    : x)
+            .join("\n");
     }
 }
 
