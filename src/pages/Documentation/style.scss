@@ -1,7 +1,29 @@
 .Documentation {
-  .Documentation-class {
+  .Documentation-body {
     text-align: center;
 
     padding: 4vmin;
+
+    .Documentation-example {
+      pre {
+        display: block;
+        text-align: left;
+        overflow: auto;
+
+        max-width: 60%;
+        padding: 1em 1.5em;
+        margin-left: 4vmin;
+
+        background-color: #383735;
+        color: #f5f5f5;
+        border-radius: 4px;
+        font-family: monospace;
+        word-wrap: break-word;
+      }
+    }
+
+    .Documentation-methods {
+      
+    }
   }
 }
