@@ -5,6 +5,8 @@ import Navbar from '../../components/Navbar';
 import GroupMember from '../../components/GroupMember';
 
 import specifications from '../../assets/specifications.pdf';
+import outline1 from '../../assets/outline1.pdf';
+import report1 from '../../assets/report1.pdf';
 
 import github from '../../assets/github.svg';
 import gmail from '../../assets/gmail.svg';
@@ -137,21 +139,21 @@ function Home() {
 
         <div className="Downloads-item">
           <h2>Soutenance 1</h2>
-          <a href={specifications}
+          <a href={report1}
               target="_blank"
               rel="noopener noreferrer">
             <button>
               Rapport
             </button>
           </a>
-          <a href={specifications}
+          <a href={outline1}
               target="_blank"
               rel="noopener noreferrer">
             <button>
               Plan
             </button>
           </a>
-          <a href="https://github.com/Crab-Wave/ora-specs"
+          <a href="https://github.com/Crab-Wave/ora-presentation"
               target="_blank"
               rel="noopener noreferrer">
             <button>
@@ -162,21 +164,21 @@ function Home() {
 
         <div className="Downloads-item">
           <h2>Soutenance 2</h2>
-          <a href={specifications}
+          <a href={report1}
               target="_blank"
               rel="noopener noreferrer">
             <button>
               Rapport
             </button>
           </a>
-          <a href={specifications}
+          <a href={outline1}
               target="_blank"
               rel="noopener noreferrer">
             <button>
               Plan
             </button>
           </a>
-          <a href="https://github.com/Crab-Wave/ora-specs"
+          <a href="https://github.com/Crab-Wave/ora-presentation"
               target="_blank"
               rel="noopener noreferrer">
             <button>
@@ -187,21 +189,21 @@ function Home() {
 
         <div className="Downloads-item">
           <h2>Soutenance 3</h2>
-          <a href={specifications}
+          <a href={report1}
               target="_blank"
               rel="noopener noreferrer">
             <button>
               Rapport
             </button>
           </a>
-          <a href={specifications}
+          <a href={outline1}
               target="_blank"
               rel="noopener noreferrer">
             <button>
               Plan
             </button>
           </a>
-          <a href="https://github.com/Crab-Wave/ora-specs"
+          <a href="https://github.com/Crab-Wave/ora-presentation"
               target="_blank"
               rel="noopener noreferrer">
             <button>
