@@ -15,7 +15,9 @@ function GroupMember(props) {
         <h2>{props.name}</h2>
 
         <div className="GroupMember-links">
-          <a href={props.github}>
+          <a href={props.github}
+             target="_blank"
+             rel="noopener noreferrer">
             <img src={github}
                   alt="GitHub icon" />
           </a>
@@ -25,7 +27,9 @@ function GroupMember(props) {
                   alt="Gmail icon" />
           </a>
 
-          <a href={props.linkedin}>
+          <a href={props.linkedin}
+             target="_blank"
+             rel="noopener noreferrer">
             <img src={linkedin}
                   alt="LinkedIn icon" />
           </a>
