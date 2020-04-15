@@ -50,13 +50,13 @@ function Home() {
           <div className="Group-members-column">
             <GroupMember name="Léo Benito"
                          picture="https://avatars2.githubusercontent.com/u/31016188"
-                         github="https://github.com/TrAyZeN"
+                         github="TrAyZeN"
                          mail="lbenitoproduction@gmail.com"
-                         linkedin="" />
+                         linkedin="leo-benito" />
 
             <GroupMember name="Raffaël Moraisin"
                          picture="https://avatars3.githubusercontent.com/u/59165594"
-                         github="https://github.com/raffaelmoraisin"
+                         github="raffaelmoraisin"
                          mail="raffael.moraisin@epita.fr"
                          linkedin="" />
           </div>
@@ -64,13 +64,13 @@ function Home() {
           <div className="Group-members-column">
             <GroupMember name="Adam Thibert"
                          picture="https://avatars3.githubusercontent.com/u/9221023"
-                         github="https://github.com/Adamaq01"
+                         github="Adamaq01"
                          mail="adamthibert01@gmail.com"
                          linkedin="" />
 
             <GroupMember name="Pierre-Corentin Auger"
                          picture="https://avatars1.githubusercontent.com/u/59179789"
-                         github="https://github.com/PierreCorentin"
+                         github="PierreCorentin"
                          mail="pierre-corentin.auger@epita.fr"
                          linkedin="" />
           </div>
