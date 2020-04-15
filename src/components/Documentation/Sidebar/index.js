@@ -7,7 +7,7 @@ import OraDoc from '../../../documentation.json'
 function Sidebar() {
   return (
     <div className="DocumentationSidebar">
-      <Link to="/documentation">Welcome page</Link>
+      <Link to="/documentation">Welcome</Link>
 
       {Object.keys(OraDoc).map(className =>
         <Link to={`/documentation/${className}`}>{className}</Link>
