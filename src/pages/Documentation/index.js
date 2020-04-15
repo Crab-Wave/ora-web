@@ -19,29 +19,32 @@ class Documentation extends React.Component {
     return (
       <div className="Documentation">
         <Navbar />
-        <Sidebar />
+        <div className="Documentation-section">
+          <Sidebar />
 
-        <div className="Documentation-body">
-          <h1>{this.state.className}</h1>
-          <p>{OraDoc[this.state.className].summary}</p>
+          <div className="Documentation-body">
+            <h1 className="Documentation-classname">{OraDoc[this.state.className].name}</h1>
+            <p>Namespace: {OraDoc[this.state.className].namespace}</p>
+            <p>{OraDoc[this.state.className].summary}</p>
 
-          <div className="Documentation-example">
-            <h1>Examples</h1>
+            <div className="Documentation-example">
+              <h1>Examples</h1>
 
-            <p>{OraDoc[this.state.className].example.text}</p>
-            <pre>
-              <code>
-                {OraDoc[this.state.className].example.code}
-              </code>
-            </pre>
-          </div>
+              <p>{OraDoc[this.state.className].example.text}</p>
+              <pre>
+                <code>
+                  {OraDoc[this.state.className].example.code}
+                </code>
+              </pre>
+            </div>
 
-          <div className="Documentation-methods">
-            <h1>Methods</h1>
+            <div className="Documentation-methods">
+              <h1>Methods</h1>
 
-            {OraDoc[this.state.className].methods.map(
-              m => <Method method={m} />
-            )}
+              {OraDoc[this.state.className].methods.map(
+                m => <Method method={m} />
+              )}
+            </div>
           </div>
         </div>
       </div>
