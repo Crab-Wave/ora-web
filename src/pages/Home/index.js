@@ -22,7 +22,7 @@ function Home() {
       </section>
 
       <section className="Presentation"
-                id="presentation">
+               id="presentation">
         <h1>Présentation</h1>
         <p>
           ORA est une application développée en C# par 4 étudiants en école d'ingénieur dans le cadre d'un projet de groupe.
@@ -42,58 +42,58 @@ function Home() {
       </section>
 
       <section className="Group"
-                id="groupe">
+               id="groupe">
         <h1>Groupe</h1>
         <p>ORA est actuellement développé par Crab Wave: un groupe d'étudiants en première année à l'EPITA.</p>
 
         <div className="Group-members">
           <div className="Group-members-column">
             <GroupMember name="Léo Benito"
-                          picture="https://avatars2.githubusercontent.com/u/31016188"
-                          github="https://github.com/TrAyZeN"
-                          mail="lbenitoproduction@gmail.com"
-                          linkedin="" />
+                         picture="https://avatars2.githubusercontent.com/u/31016188"
+                         github="https://github.com/TrAyZeN"
+                         mail="lbenitoproduction@gmail.com"
+                         linkedin="" />
 
             <GroupMember name="Raffaël Moraisin"
-                          picture="https://avatars3.githubusercontent.com/u/59165594"
-                          github="https://github.com/raffaelmoraisin"
-                          mail="raffael.moraisin@epita.fr"
-                          linkedin="" />
+                         picture="https://avatars3.githubusercontent.com/u/59165594"
+                         github="https://github.com/raffaelmoraisin"
+                         mail="raffael.moraisin@epita.fr"
+                         linkedin="" />
           </div>
 
           <div className="Group-members-column">
             <GroupMember name="Adam Thibert"
-                          picture="https://avatars3.githubusercontent.com/u/9221023"
-                          github="https://github.com/Adamaq01"
-                          mail="adamthibert01@gmail.com"
-                          linkedin="" />
+                         picture="https://avatars3.githubusercontent.com/u/9221023"
+                         github="https://github.com/Adamaq01"
+                         mail="adamthibert01@gmail.com"
+                         linkedin="" />
 
             <GroupMember name="Pierre-Corentin Auger"
-                          picture="https://avatars1.githubusercontent.com/u/59179789"
-                          github="https://github.com/PierreCorentin"
-                          mail="pierre-corentin.auger@epita.fr"
-                          linkedin="" />
+                         picture="https://avatars1.githubusercontent.com/u/59179789"
+                         github="https://github.com/PierreCorentin"
+                         mail="pierre-corentin.auger@epita.fr"
+                         linkedin="" />
           </div>
         </div>
       </section>
 
       <section className="Downloads"
-                id="telechargements">
+               id="telechargements">
         <h1>Téléchargements</h1>
 
         <div className="Downloads-item">
           <h2>ORA</h2>
 
           <a href="https://github.com/Crab-Wave/ora"
-              target="_blank"
-              rel="noopener noreferrer">
+             target="_blank"
+             rel="noopener noreferrer">
             <button>
               Télécharger
             </button>
           </a>
           <a href="https://github.com/Crab-Wave/ora"
-              target="_blank"
-              rel="noopener noreferrer">
+             target="_blank"
+             rel="noopener noreferrer">
             <button>
               Code source
             </button>
@@ -104,15 +104,15 @@ function Home() {
           <h2>ORA tracker</h2>
 
           <a href="https://github.com/Crab-Wave/ora-tracker"
-              target="_blank"
-              rel="noopener noreferrer">
+             target="_blank"
+             rel="noopener noreferrer">
             <button>
               Télécharger
             </button>
           </a>
           <a href="https://github.com/Crab-Wave/ora-tracker"
-              target="_blank"
-              rel="noopener noreferrer">
+             target="_blank"
+             rel="noopener noreferrer">
             <button>
               Code source
             </button>
@@ -122,15 +122,15 @@ function Home() {
         <div className="Downloads-item">
           <h2>Cahier des charges</h2>
           <a href={specifications}
-              target="_blank"
-              rel="noopener noreferrer">
+             target="_blank"
+             rel="noopener noreferrer">
             <button>
               Télécharger
             </button>
           </a>
           <a href="https://github.com/Crab-Wave/ora-specs"
-              target="_blank"
-              rel="noopener noreferrer">
+             target="_blank"
+             rel="noopener noreferrer">
             <button>
               Code source
             </button>
@@ -140,22 +140,22 @@ function Home() {
         <div className="Downloads-item">
           <h2>Soutenance 1</h2>
           <a href={report1}
-              target="_blank"
-              rel="noopener noreferrer">
+             target="_blank"
+             rel="noopener noreferrer">
             <button>
               Rapport
             </button>
           </a>
           <a href={outline1}
-              target="_blank"
-              rel="noopener noreferrer">
+             target="_blank"
+             rel="noopener noreferrer">
             <button>
               Plan
             </button>
           </a>
           <a href="https://github.com/Crab-Wave/ora-presentation"
-              target="_blank"
-              rel="noopener noreferrer">
+             target="_blank"
+             rel="noopener noreferrer">
             <button>
               Code source
             </button>
@@ -165,22 +165,22 @@ function Home() {
         <div className="Downloads-item">
           <h2>Soutenance 2</h2>
           <a href={report1}
-              target="_blank"
-              rel="noopener noreferrer">
+             target="_blank"
+             rel="noopener noreferrer">
             <button>
               Rapport
             </button>
           </a>
           <a href={outline1}
-              target="_blank"
-              rel="noopener noreferrer">
+             target="_blank"
+             rel="noopener noreferrer">
             <button>
               Plan
             </button>
           </a>
           <a href="https://github.com/Crab-Wave/ora-presentation"
-              target="_blank"
-              rel="noopener noreferrer">
+             target="_blank"
+             rel="noopener noreferrer">
             <button>
               Code source
             </button>
@@ -190,22 +190,22 @@ function Home() {
         <div className="Downloads-item">
           <h2>Soutenance 3</h2>
           <a href={report1}
-              target="_blank"
-              rel="noopener noreferrer">
+             target="_blank"
+             rel="noopener noreferrer">
             <button>
               Rapport
             </button>
           </a>
           <a href={outline1}
-              target="_blank"
-              rel="noopener noreferrer">
+             target="_blank"
+             rel="noopener noreferrer">
             <button>
               Plan
             </button>
           </a>
           <a href="https://github.com/Crab-Wave/ora-presentation"
-              target="_blank"
-              rel="noopener noreferrer">
+             target="_blank"
+             rel="noopener noreferrer">
             <button>
               Code source
             </button>
@@ -218,8 +218,8 @@ function Home() {
 
         <div className="Contacts-links">
           <a href="https://github.com/Crab-Wave"
-              target="_blank"
-              rel="noopener noreferrer">
+             target="_blank"
+             rel="noopener noreferrer">
             <img src={github}
                  alt="GitHub icon" />
           </a>
