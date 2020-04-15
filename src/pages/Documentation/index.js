@@ -40,7 +40,7 @@ class Documentation extends React.Component {
             <h1>Methods</h1>
 
             {OraDoc[this.state.className].methods.map(
-              m => <Method method={m.prototype} />
+              m => <Method method={m} />
             )}
           </div>
         </div>
