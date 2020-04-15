@@ -10,7 +10,8 @@ function DocumentationHome() {
       <Sidebar />
 
       <div className="DocumentationHome-body">
-        <h1>Welcome to ORA documentation pages</h1>
+        <h1>ORA API documentation</h1>
+        <p>Welcome to the ORA API documentation pages.</p>
       </div>
     </div>
   );
