@@ -79,10 +79,10 @@ class Documentation {
             this.registerClass(classname);
 
         this.document[classname].methods.push({
-            "prototype": prototype,
-            "summary": member.summary.trim(),
-            "param": member.param,
-            "returns": member.returns
+            prototype: prototype,
+            summary: member.summary.trim(),
+            param: member.param,
+            returns: member.returns
         });
     }
 
@@ -95,10 +95,16 @@ class Documentation {
     }
 
     registerClass(classname) {
+        let m = classname.split(".");
+        let name = m.pop();
+        let namespace = m.join(".");
+
         this.document[classname] = {
-            "summary": "",
+            name,
+            namespace,
+            summary: "",
             example: {},
-            "methods": []
+            methods: []
         };
     }
 

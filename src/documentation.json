@@ -1,5 +1,7 @@
 {
   "ORA.API.Encryption.ICipher": {
+    "name": "ICipher",
+    "namespace": "ORA.API.Encryption",
     "summary": "An object capable of Encrypting data or Decrypting data that has been previously encrypted with the same algorithm.",
     "example": {
       "text": "The following code\r\n\r\nwill print the value\r\n\r\n.",
