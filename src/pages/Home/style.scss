@@ -38,10 +38,14 @@
   .Presentation {
     background-color: #524d48;
     padding: 3vmin;
-    height: 90vmin;
+    height: 55vmin;
+
+    h1 {
+      margin-bottom: 8vmin;
+    }
 
     p {
-      width: 40%;
+      width: 80vmin;
     }
   }
 
