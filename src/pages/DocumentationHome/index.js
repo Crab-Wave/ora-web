@@ -7,7 +7,7 @@ function DocumentationHome() {
   return (
     <div className="DocumentationHome">
       <Navbar />
-      <Sidebar />
+      <Sidebar handler={() => { }} />
 
       <div className="DocumentationHome-body">
         <h1>ORA API documentation</h1>

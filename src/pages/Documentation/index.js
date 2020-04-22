@@ -20,7 +20,7 @@ class Documentation extends React.Component {
       <div className="Documentation">
         <Navbar />
         <div className="Documentation-section">
-          <Sidebar />
+          <Sidebar handler={(className) => this.setState({ className })} />
 
           <div className="Documentation-body">
             <h1 className="Documentation-classname">{OraDoc[this.state.className].name}</h1>
