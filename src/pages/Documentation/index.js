@@ -33,6 +33,21 @@ class Documentation extends React.Component {
     )
   }
 
+  renderConstructors(constructors) {
+    if (constructors.length === 0)
+      return null;
+
+    return (
+      <div className="Documentation-methods">
+        <h1>Constructors</h1>
+
+        {constructors.map(
+          c => <Method method={c} />
+        )}
+      </div>
+    );
+  }
+
   renderMethods(methods) {
     if (methods.length === 0)
       return null;
@@ -61,9 +76,8 @@ class Documentation extends React.Component {
             <p>{OraDoc[this.state.className].summary}</p>
 
             {this.renderExample(OraDoc[this.state.className].example)}
+            {this.renderConstructors(OraDoc[this.state.className].constructors)}
             {this.renderMethods(OraDoc[this.state.className].methods)}
-
-            
           </div>
         </div>
       </div>
