@@ -79,7 +79,7 @@ class Documentation {
             this.registerClass(classname);
 
         this.document[classname].methods.push({
-            prototype: prototype,
+            prototype: prototype.replace(",", ", "),
             summary: member.summary.trim(),
             param: member.param,
             returns: member.returns
