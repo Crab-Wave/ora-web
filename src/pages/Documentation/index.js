@@ -15,6 +15,24 @@ class Documentation extends React.Component {
     };
   }
 
+  renderExample(example) {
+    if (Object.keys(example).length === 0)
+      return null;
+
+    return (
+      <div className="Documentation-example">
+        <h1>Examples</h1>
+
+        <p>{example.text}</p>
+        <pre>
+          <code>
+            {example.code}
+          </code>
+        </pre>
+      </div>
+    )
+  }
+
   render() {
     return (
       <div className="Documentation">
@@ -27,16 +45,7 @@ class Documentation extends React.Component {
             <p>Namespace: {OraDoc[this.state.className].namespace}</p>
             <p>{OraDoc[this.state.className].summary}</p>
 
-            <div className="Documentation-example">
-              <h1>Examples</h1>
-
-              <p>{OraDoc[this.state.className].example.text}</p>
-              <pre>
-                <code>
-                  {OraDoc[this.state.className].example.code}
-                </code>
-              </pre>
-            </div>
+            {this.renderExample(OraDoc[this.state.className].example)}
 
             <div className="Documentation-methods">
               <h1>Methods</h1>
