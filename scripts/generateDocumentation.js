@@ -122,7 +122,7 @@ class Documentation {
 }
 
 async function main() {
-    let json = xmlToJson(await get("https://raw.githubusercontent.com/Crab-Wave/ora/master/documentation.xml"));
+    let json = xmlToJson(await get("https://raw.githubusercontent.com/Crab-Wave/ora/master/ORA.API/documentation.xml"));
 
     if (!("doc" in json) || !("members" in json.doc) || !("member" in json.doc.members))
         throw Error("Invalid documentation object");
