@@ -47,7 +47,10 @@ class Documentation {
                 this.addClass(members[i].attributes.name.substring(2), members[i]);
             else if (type === "M") {
                 let [classname, prototype] = this.parseClassnameAndPrototype(members[i].attributes.name);
-                this.addMethodToClass(classname, prototype, members[i]);
+                if (prototype.includes("#ctor"))
+                    this.addConstructorToClass(classname, prototype, members[i]);
+                else
+                    this.addMethodToClass(classname, prototype, members[i]);
             }
         }
     }
@@ -72,6 +75,18 @@ class Documentation {
                     this.document[classname].example[key] = member.example[key];
             }
         }
+    }
+
+    addConstructorToClass(classname, prototype, member) {
+        if (!this.isClassRegistered(classname))
+            this.registerClass(classname);
+
+        this.document[classname].constructors.push({
+            prototype: prototype.replace(",", ", ").replace("#ctor", this.document[classname].name),
+            summary: member.summary.trim(),
+            param: member.param,
+            returns: member.returns
+        });
     }
 
     addMethodToClass(classname, prototype, member) {
@@ -104,6 +119,7 @@ class Documentation {
             namespace,
             summary: "",
             example: {},
+            constructors: [],
             methods: []
         };
     }
