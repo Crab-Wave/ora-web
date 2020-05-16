@@ -82,7 +82,7 @@ class Documentation {
             this.registerClass(classname);
 
         this.document[classname].constructors.push({
-            prototype: prototype.replace(",", ", ").replace("#ctor", this.document[classname].name),
+            prototype: this.formatPrototype(prototype).replace("#ctor", this.document[classname].name),
             summary: member.summary.trim(),
             param: member.param,
             returns: member.returns
@@ -94,11 +94,15 @@ class Documentation {
             this.registerClass(classname);
 
         this.document[classname].methods.push({
-            prototype: prototype.replace(",", ", "),
+            prototype: this.formatPrototype(prototype),
             summary: member.summary.trim(),
             param: member.param,
             returns: member.returns
         });
+    }
+
+    formatPrototype(prototype) {
+        return prototype.replace(/,/g, ", ").replace(/\{/g, "<").replace(/\}/g, ">");
     }
 
     serialize() {
