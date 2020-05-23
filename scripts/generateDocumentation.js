@@ -81,10 +81,12 @@ class Documentation {
         if (!this.isClassRegistered(classname))
             this.registerClass(classname);
 
+        let param = this.parseParameters(prototype, member.param);
+
         this.document[classname].constructors.push({
-            prototype: this.formatPrototype(prototype).replace("#ctor", this.document[classname].name),
+            prototype: this.formatPrototype(prototype.replace("#ctor", this.document[classname].name), param),
             summary: member.summary.trim(),
-            param: this.parseParameters(prototype, member.param),
+            param: param,
             returns: member.returns
         });
     }
@@ -93,10 +95,12 @@ class Documentation {
         if (!this.isClassRegistered(classname))
             this.registerClass(classname);
 
+        let param = this.parseParameters(prototype, member.param);
+
         this.document[classname].methods.push({
-            prototype: this.formatPrototype(prototype),
+            prototype: this.formatPrototype(prototype, param),
             summary: member.summary.trim(),
-            param: this.parseParameters(prototype, member.param),
+            param: param,
             returns: member.returns
         });
     }
@@ -105,8 +109,13 @@ class Documentation {
         if (parameters === undefined)
             return undefined;
 
+        console.log(prototype);
         parameters = !(parameters instanceof Array) ? [parameters] : parameters;
-        let types = prototype.substring(prototype.indexOf("(")+1, prototype.lastIndexOf(")")).split(",");
+        let types = prototype
+            .replace(/\{/g, "<")
+            .replace(/\}/g, ">")
+            .substring(prototype.indexOf("(")+1, prototype.lastIndexOf(")"))
+            .split(/(?!\<[^,]*),(?![^,]*\>)/g);
 
         for (let i = 0; i < parameters.length; i++)
         {
@@ -120,8 +129,16 @@ class Documentation {
         return parameters;
     }
 
-    formatPrototype(prototype) {
-        return prototype.replace(/,/g, ", ").replace(/\{/g, "<").replace(/\}/g, ">");
+    formatPrototype(prototype, parameters) {
+        if (parameters !== undefined)
+        {
+            prototype = prototype.substring(0, prototype.indexOf("(") + 1);
+            prototype += parameters
+                .map(p => `${p.type} ${p.name}`)
+                .join(",") + ")";
+        }
+
+        return prototype.replace(/,/g, ", ");
     }
 
     serialize() {
