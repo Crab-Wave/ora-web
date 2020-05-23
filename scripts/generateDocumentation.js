@@ -84,7 +84,7 @@ class Documentation {
         this.document[classname].constructors.push({
             prototype: this.formatPrototype(prototype).replace("#ctor", this.document[classname].name),
             summary: member.summary.trim(),
-            param: member.param,
+            param: this.parseParameters(prototype, member.param),
             returns: member.returns
         });
     }
@@ -96,9 +96,28 @@ class Documentation {
         this.document[classname].methods.push({
             prototype: this.formatPrototype(prototype),
             summary: member.summary.trim(),
-            param: member.param,
+            param: this.parseParameters(prototype, member.param),
             returns: member.returns
         });
+    }
+
+    parseParameters(prototype, parameters) {
+        if (parameters === undefined)
+            return undefined;
+
+        parameters = !(parameters instanceof Array) ? [parameters] : parameters;
+        let types = prototype.substring(prototype.indexOf("(")+1, prototype.lastIndexOf(")")).split(",");
+
+        for (let i = 0; i < parameters.length; i++)
+        {
+            parameters[i] = {
+                type: types[i],
+                name: parameters[i].attributes.name,
+                summary: parameters[i].text
+            };
+        }
+
+        return parameters;
     }
 
     formatPrototype(prototype) {
