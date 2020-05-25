@@ -7,6 +7,8 @@ import GroupMember from '../../components/GroupMember';
 import specifications from '../../assets/specifications.pdf';
 import outline1 from '../../assets/outline1.pdf';
 import report1 from '../../assets/report1.pdf';
+import outline2 from '../../assets/outline2.pdf';
+import report2 from '../../assets/report2.pdf';
 
 import github from '../../assets/github.svg';
 import gmail from '../../assets/gmail.svg';
@@ -164,14 +166,14 @@ function Home() {
 
         <div className="Downloads-item">
           <h2>Soutenance 2</h2>
-          <a href={report1}
+          <a href={report2}
              target="_blank"
              rel="noopener noreferrer">
             <button>
               Rapport
             </button>
           </a>
-          <a href={outline1}
+          <a href={outline2}
              target="_blank"
              rel="noopener noreferrer">
             <button>
@@ -189,14 +191,14 @@ function Home() {
 
         <div className="Downloads-item">
           <h2>Soutenance 3</h2>
-          <a href={report1}
+          <a href={report2}
              target="_blank"
              rel="noopener noreferrer">
             <button>
               Rapport
             </button>
           </a>
-          <a href={outline1}
+          <a href={outline2}
              target="_blank"
              rel="noopener noreferrer">
             <button>
