@@ -219,7 +219,7 @@ function Home() {
              target="_blank"
              rel="noopener noreferrer">
             <button>
-              Installateur
+              Installeur
             </button>
           </a>
           <a href="https://github.com/Crab-Wave/ora-presentation"
