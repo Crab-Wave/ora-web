@@ -212,6 +212,20 @@ function Home() {
               Code source
             </button>
           </a>
+          <a href="https://github.com/Crab-Wave/ora-presentation"
+             target="_blank"
+             rel="noopener noreferrer">
+            <button>
+              Manuel d'installation
+            </button>
+          </a>
+          <a href="https://github.com/Crab-Wave/ora-presentation"
+             target="_blank"
+             rel="noopener noreferrer">
+            <button>
+              Manuel d'utilisation
+            </button>
+          </a>
         </div>
       </section>
 
