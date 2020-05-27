@@ -212,6 +212,16 @@ function Home() {
               Code source
             </button>
           </a>
+        </div>
+        <div className="Downloads-item">
+          <h2>Production</h2>
+          <a href="https://github.com/Crab-Wave/ora-presentation"
+             target="_blank"
+             rel="noopener noreferrer">
+            <button>
+              Installateur
+            </button>
+          </a>
           <a href="https://github.com/Crab-Wave/ora-presentation"
              target="_blank"
              rel="noopener noreferrer">
