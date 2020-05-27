@@ -19,7 +19,7 @@ function DocumentationHome() {
           <ul>
             <li>Users are called Members within a Cluster.</li>
             <li>Machines used by Members are called Nodes.</li>
-            <li>Groups of Nodes sharing files are called Clusters.</li>
+            <li>Groups of Members sharing files are called Clusters.</li>
           </ul>
         </div>
       </div>
