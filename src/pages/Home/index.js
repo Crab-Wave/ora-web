@@ -13,6 +13,7 @@ import outline3 from '../../assets/outline3.pdf';
 import report3 from '../../assets/report3.pdf';
 import installationManual from '../../assets/installation_manual.pdf';
 import userManual from '../../assets/user_manual.pdf';
+import setup from '../../assets/setup.exe';
 
 import github from '../../assets/github.svg';
 import gmail from '../../assets/gmail.svg';
@@ -219,7 +220,7 @@ function Home() {
         </div>
         <div className="Downloads-item">
           <h2>Production</h2>
-          <a href="https://github.com/Crab-Wave/ora-presentation"
+          <a href={setup}
              target="_blank"
              rel="noopener noreferrer">
             <button>
