@@ -15,7 +15,7 @@ function DocumentationHome() {
 
         <div className="DocumentationHome-section">
           <h2>Abstractions</h2>
-          <p>The ORA API is using a specific vocabulary, these are the main one:</p>
+          <p>The ORA API is using specific terms, these are the main one:</p>
           <ul>
             <li>Users are called Members within a Cluster.</li>
             <li>Machines used by Members are called Nodes.</li>
