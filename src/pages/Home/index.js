@@ -9,6 +9,10 @@ import outline1 from '../../assets/outline1.pdf';
 import report1 from '../../assets/report1.pdf';
 import outline2 from '../../assets/outline2.pdf';
 import report2 from '../../assets/report2.pdf';
+import outline3 from '../../assets/outline3.pdf';
+import report3 from '../../assets/report3.pdf';
+import installationManual from '../../assets/installation_manual.pdf';
+import userManual from '../../assets/user_manual.pdf';
 
 import github from '../../assets/github.svg';
 import gmail from '../../assets/gmail.svg';
@@ -191,14 +195,14 @@ function Home() {
 
         <div className="Downloads-item">
           <h2>Soutenance 3</h2>
-          <a href={report2}
+          <a href={report3}
              target="_blank"
              rel="noopener noreferrer">
             <button>
               Rapport
             </button>
           </a>
-          <a href={outline2}
+          <a href={outline3}
              target="_blank"
              rel="noopener noreferrer">
             <button>
@@ -222,14 +226,14 @@ function Home() {
               Installeur
             </button>
           </a>
-          <a href="https://github.com/Crab-Wave/ora-presentation"
+          <a href={installationManual}
              target="_blank"
              rel="noopener noreferrer">
             <button>
               Manuel d'installation
             </button>
           </a>
-          <a href="https://github.com/Crab-Wave/ora-presentation"
+          <a href={userManual}
              target="_blank"
              rel="noopener noreferrer">
             <button>
