@@ -16,16 +16,16 @@
     "url": "https://github.com/Crab-Wave/ora-web.git"
   },
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.1",
-    "@testing-library/react": "^10.4.7",
-    "@testing-library/user-event": "^12.0.15",
-    "node-fetch": "^2.6.0",
+    "@testing-library/jest-dom": "^5.11.5",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "node-fetch": "^2.6.1",
     "node-sass": "^4.14.1",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
-    "serialize-javascript": "^4.0.0"
+    "react-scripts": "4.0.0",
+    "serialize-javascript": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
